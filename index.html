@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor - Advice generator app solution</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="font-custom bg-dark_blue">
+    <div
+      class="text-white min-h-screen overflow-auto w-screen flex items-center justify-center"
+    >
+      <div
+        class="bg-darkgrayish_blue relative flex flex-col h-[18rem] md:h-[18rem] w-[80%] md:w-[30%] rounded-xl p-6 text-center"
+      >
+        <p class="uppercase text-neon_green font-bold">
+          advice #<span id="advice_count_js"></span>
+        </p>
+        <div class="p-4">
+          <p
+            id="advice_container_js"
+            class="text-light_cyan text-xl md:text-2xl hm:text-sm font-bold"
+          ></p>
+        </div>
+        <div
+          class="flex justify-center left-1/2 w-full md:w-[90%] transform -translate-x-1/2 overflow-auto absolute bottom-[2rem] md:bottom-[3rem]"
+        >
+          <img
+            src="./assets/pattern-divider-desktop.svg"
+            class="hidden md:block"
+            alt=""
+          />
+
+          <img
+            src="./assets/pattern-divider-mobile.svg"
+            class="block md:hidden"
+            alt="Small Image"
+          />
+        </div>
+        <button
+          id="advice_button_js"
+          class="md:w-[4rem] button md:h-[4rem] hover:shadow-neon_green hover:shadow-[2px_-5px_4rem] flex items-center justify-center md:mt-[6rem] w-[4rem] rounded-[50%] h-[4rem] bg-neon_green absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2"
+        >
+          <img src="./assets/icon-dice.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
